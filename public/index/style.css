@@ -1,0 +1,364 @@
+body{
+    background-color: rgb(236, 151, 236);
+    margin: 0;
+    padding: 0;
+
+}
+h1:hover {
+    color: rgb(12, 5, 5);
+    background-color: rgb(32, 194, 235);
+}
+span:hover{
+    font-size: 18px;
+    color: #cccccc;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: all 0.4s ease-in-out;
+        color: #ffffff;
+    
+}
+
+.carousel-inner{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(71, 67, 67);
+    align-items: center;
+    display: flex;
+}
+
+nav{
+    border: 2px solid black;
+    background: rgb(121, 65, 121);
+
+}
+input{
+    width: 550px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: antiquewhite;
+}
+.btn{
+    border-radius: 15px;
+    background-color: antiquewhite;
+}
+.main{
+    display: flex;
+    width: 99%;
+    height: 650px;
+    background-color: antiquewhite;
+    margin: 10px;
+    padding: 9px;
+    align-items: center;
+}
+.div1{
+    width: 450px;
+    height: 600px;
+    background-color: plum;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 25px;
+    align-items: center;
+    text-align: center;
+    border: none;
+}
+
+.div2{
+    width: 450px;
+    height: 600px;
+    background-color: plum;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 25px;
+    align-items: center;
+    text-align: center;
+    border: none;
+}
+.div3{
+    width: 450px;
+    height: 600px;
+    background-color: plum;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 25px;
+    align-items: center;
+    text-align: center;
+    border: none;
+}
+.card-body{
+    text-align: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+/* DEMO STYLES ONLY */
+body {
+    font-family: "Inter";
+    padding: 4em;
+}
+/* END DEMO STYLES */
+
+.whiskey-cards {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    padding: 48px 48px 0 48px;
+
+}
+
+.whiskey-cards::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 5px;
+    height: 5px;
+}
+
+.whiskey-cards::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, .5);
+    background: linear-gradient(90deg, #02bcf5, #0073e6, #003ab9, #635bff);
+    box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+    border-radius: 16px;
+    opacity: .5;
+}
+
+.whiskey-cards:hover::-webkit-scrollbar-thumb {
+    opacity: 1;
+}
+
+.whiskey-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 244px;
+    flex-basis: 244px;
+    border-radius: 16px;
+    margin: 8px;
+    padding: 16px;
+    box-shadow: 0 -16px 24px rgb(0 0 0 / 5%);
+    color: #ffffff;
+
+    transition: all 150ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.whiskey-card:hover {
+    background-color: #1088f8 !important;
+    transform: scale(1.04) translateY(-16px);
+    box-shadow: 0 -16px 24px rgb(0 0 0 / 10%);
+}
+
+.whiskey-card h3 {
+    padding-top: 0;
+    line-height: 1.35;
+}
+
+.whiskey-card .whiskey-card--content {
+    line-height: 1.5;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.whiskey-card .whiskey-card--content img {
+    max-width: 100%;
+}
+
+.whiskey-card .whiskey-card--link {
+    line-height: 1.5;
+    font-size: 15px;
+    font-weight: 700;
+    opacity: .7;
+    margin: auto 0 0 0;
+}
+
+.whiskey-card h3 a,
+.whiskey-card .whiskey-card--link a {
+    color: #ffffff;
+}
+
+.whiskey-card .whiskey-card--link a svg {
+    --arrowSpacing: 5px;
+    --arrowHoverTransition: 150ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    --arrowHoverOffset: translateX(3px);
+    --arrowTipTransform: none;
+    --arrowLineOpacity: 0;
+    position: relative;
+    top: 1px;
+    margin-left: var(--arrowSpacing);
+    stroke-width: 2px;
+    fill: none;
+    stroke: currentColor;
+}
+
+.HoverArrow__linePath {
+    opacity: var(--arrowLineOpacity);
+    transition: opacity var(--hoverTransition, var(--arrowHoverTransition));
+}
+
+.HoverArrow__tipPath {
+    transform: var(--arrowTipTransform);
+    transition: transform var(--hoverTransition, var(--arrowHoverTransition));
+}
+
+.whiskey-card:hover .HoverArrow__linePath {
+    --arrowLineOpacity: 1;
+}
+
+.whiskey-card:hover .HoverArrow__tipPath {
+    --arrowTipTransform: var(--arrowHoverOffset);
+}
+
+ /* animation work */
+ body,
+ html {
+     /* height: 100%;
+     margin: 0;
+     padding: 0; */
+     font-family: 'Helvetica', sans-serif;
+     /* background: rgb(26, 188, 156);
+     background: -moz-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
+     background: -webkit-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
+     background: linear-gradient(135deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%); */
+ }
+ 
+ h1 {
+     font-size: 24px;
+     margin: 10px 0 0 0;
+     font-weight: lighter;
+     text-transform: uppercase;
+     color: #eeeeee;
+ }
+ 
+ p {
+     font-size: 12px;
+     font-weight: light;
+     color: #333333;
+ }
+ 
+ span a {
+     font-size: 18px;
+     color: #cccccc;
+     text-decoration: none;
+     margin: 0 10px;
+     transition: all 0.4s ease-in-out;
+     &:hover {
+         color: #ffffff;
+     }
+ }
+ 
+ @keyframes float {
+     0% {
+         box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+         transform: translatey(0px);
+     }
+     50% {
+         box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+         transform: translatey(-20px);
+     }
+     100% {
+         box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+         transform: translatey(0px);
+     }
+ }
+ 
+ .container {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .avatar {
+     width: 150px;
+     height: 150px;
+     box-sizing: border-box;
+     border: 5px white solid;
+     border-radius: 50%;
+     overflow: hidden;
+     box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+     transform: translatey(0px);
+     animation: float 6s ease-in-out infinite;
+     img { width: 100%; height: auto; }
+ }
+ 
+ .content {
+     width: 100%;
+     max-width: 600px;
+     padding: 20px 40px;
+     box-sizing: border-box;
+     text-align: center;
+ }
+ 
+ .suppoprt-me {
+     display: inline-block;
+     position: fixed;
+     bottom: 10px;
+     left: 10px;
+     width: 20vw;
+     max-width: 250px;
+     min-width: 200px;
+     z-index: 9;
+     img {
+         width: 100%;
+         height: auto;
+     }
+ }
+.card-header{
+    position: absolute;
+    top: 30px;
+    left: 80%;
+}
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #e922b7;
+        color: #fff;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      }
+      
+.big{
+    margin: 20px;
+    padding: 10px;
+    width: 900px;
+    height: 800px;
+    display: inline;
+}
+      .vid{
+        border: 2px solid black;
+        width: 200px;
+        height: 350px;
+        position: absolute;
+        top: 4px;
+        left: 60%;
+        border: none;
+      }
+.imgd{
+    border: 2px solid black;
+    width: 650px;
+    height: 350px;
+    display: inline;
+    border: none;
+    margin: 10px;
+    padding: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
